@@ -12,6 +12,9 @@ import arabic_reshaper
 from bidi.algorithm import get_display
 from deep_translator import GoogleTranslator
 from langdetect import detect, DetectorFactory
+from dotenv import load_dotenv, find_dotenv
+# Load .env if present for local runs
+load_dotenv(find_dotenv(), override=False)
 
 from aiohttp import web
 
